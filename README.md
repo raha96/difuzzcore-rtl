@@ -72,5 +72,16 @@ make SIM_BUILD=<build_dir> VFILE=<target> TOPLEVEL=<topmodule> NUM_ITER=<num_ite
 **DEBUG**:     Set 1 to print debug messages  
 
 
+### Examples
+
+**Basic test:**
+```
+make SIM_BUILD=outputs/build VFILE=SmallBoomTile_v1.2_state TOPLEVEL=BoomTile NUM_ITER=10 OUT=output/out
+```
+
+**Simple verbose:**
+```
+make SIM_BUILD=outputs/build VFILE=SmallBoomTile_v1.2_state TOPLEVEL=BoomTile NUM_ITER=10 OUT=output/out RECORD=1 DEBUG=1
+```
 
 
