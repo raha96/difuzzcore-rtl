@@ -95,7 +95,9 @@ if (multicore or record) and not os.path.isfile(cov_log):
 start_time = time.time()
 
 if not multicore:
+    print('[DifuzzRTL-RMS] Single core')
     if minimize:
+        print('[DifuzzRTL-RMS] Using Minimize TestFactory')
         factory = TestFactory(Minimize)
         factory.add_option('toplevel', [toplevel])
         factory.add_option('template', [template])
@@ -103,6 +105,7 @@ if not multicore:
         factory.add_option('debug', [debug])
 
     else:
+        print('[DifuzzRTL-RMS] Using Run TestFactory')
         factory = TestFactory(Run)
         parser.register_option(factory)
         factory.add_option('cov_log', [cov_log])
@@ -111,6 +114,7 @@ if not multicore:
     factory.generate_tests()
 
 else:
+    print('[DifuzzRTL-RMS] Multi core')
     manager = procManager(multicore, out, date)
 
     save_file(cov_log, 'a', '{:<10}\t{:<10}\t{:<10}\n'.
