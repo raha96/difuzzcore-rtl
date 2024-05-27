@@ -2,7 +2,7 @@ import os
 import random
 from copy import deepcopy
 
-from inst_generator import Word, rvInstGenerator, PREFIX, MAIN, SUFFIX
+from .inst_generator import Word, rvInstGenerator, PREFIX, MAIN, SUFFIX
 
 """ Mutation phases """
 GENERATION = 0

@@ -4,8 +4,8 @@ import cocotb
 from cocotb.decorators import coroutine
 from cocotb.triggers import RisingEdge
 
-from adapters.tilelink.adapter import tlAdapter
-from adapters.tilelink.definitions import *
+from .tilelink.adapter import tlAdapter
+from .tilelink.definitions import *
 
 INT_MEIP = 0x4
 INT_SEIP = 0x8

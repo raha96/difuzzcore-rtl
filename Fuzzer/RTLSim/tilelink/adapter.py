@@ -6,8 +6,8 @@ import queue
 from cocotb.decorators import coroutine
 from cocotb.triggers import Timer, RisingEdge
 
-from adapters.tilelink.definitions import *
-from adapters.tilelink.utils import *
+from .definitions import *
+from .utils import *
 
 """ Tilelink adapter
 , which acts as a tilelink slave 

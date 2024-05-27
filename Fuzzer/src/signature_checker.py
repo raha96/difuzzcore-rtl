@@ -1,6 +1,6 @@
 import os
 
-from riscv_definitions import *
+from .riscv_definitions import *
 
 class sigChecker():
     def __init__(self, isa_sigfile, rtl_sigfile, debug=False, minimizing=False):

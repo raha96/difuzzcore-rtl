@@ -3,8 +3,8 @@ import cocotb
 
 from cocotb.decorators import coroutine
 from cocotb.triggers import Timer, RisingEdge
-from reader.tile_reader import tileSrcReader
-from adapters.tile_adapter import tileAdapter
+from .tile_reader import tileSrcReader
+from .tile_adapter import tileAdapter
 
 SUCCESS = 0
 ASSERTION_FAIL = 1

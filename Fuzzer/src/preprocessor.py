@@ -5,7 +5,7 @@ import random
 
 from ISASim.host import isaInput
 from RTLSim.host import rtlInput
-from mutator import simInput, templates, P_M, P_S, P_U, V_U
+from .mutator import simInput, templates, P_M, P_S, P_U, V_U
 
 class rvPreProcessor():
     def __init__(self, cc, elf2hex, template='Template', out_base ='.', proc_num=0):

@@ -1,8 +1,8 @@
 import os
 import random
 
-from riscv_definitions import *
-from word import *
+from .riscv_definitions import *
+from .word import *
 
 """ rvInstGenerator
 Generates syntactically, semantically desirable unit of instructions
