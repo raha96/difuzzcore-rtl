@@ -1,7 +1,7 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
-    <property name="random_seed" value="1716844507" />
-    <testcase name="Run_001" classname="DifuzzRTL" file="/home/raha/Desktop/fuzz-repos/venv-difuzzrtl/lib/python3.11/site-packages/cocotb/regression.py" lineno="604" time="0.0009577274322509766" sim_time_ns="1000" ratio_time="1044138.4117500623">
+    <property name="random_seed" value="1716844543" />
+    <testcase name="Run_001" classname="DifuzzRTL" file="/home/raha/Desktop/fuzz-repos/venv-difuzzrtl/lib/python3.11/site-packages/cocotb/regression.py" lineno="604" time="0.0009701251983642578" sim_time_ns="1000" ratio_time="1030794.7898746621">
       <failure />
     </testcase>
   </testsuite>
